@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jampala Dinesh Chowdary - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #010113;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #080010, #f1fc25);
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        header nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffdd57;
+            text-decoration: underline;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        section h2 {
+            color: #1279df;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #f8f6f6;
+        }
+
+        /* Card Styles */
+        .card {
+            background: #0c0000;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #2980b9;
+            margin-top: 0;
+        }
+
+        .card p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .link {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .link:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+        /* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card .icon {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #555;
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>JAMPALA DINESH CHOWDARY</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello! I am J Dinesh Chowdary, a Software Engineering Student at VIT, Vellore.</p>
+        <p>Contact me: <a class="link" href="mailto:dineshwalker143@gmail.com">dineshwalker143@gmail.com</a> | Phone: +91-8897199537</p>
+        <p>
+            <a class="link" href="https://github.com/your-github-profile" target="_blank">GitHub</a> |
+            <a class="link" href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a> |
+            <a class="link" href="https://drive.google.com/file/d/1KYsNLxadi0G11jA4tvCH_YIjag4L5Aas/view?usp=drive_link" download>Download Resume</a>
+        </p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>I am currently pursuing my final year degree in Integrated M-Tech (Software Engineering) from VIT Vellore. Passionate programmer and problem solver, dedicated to crafting elegant and efficient solutions. I constantly explore new technologies and frameworks to stay at the forefront of innovation.</p>
+            <p>I am a highly motivated and detail-oriented software developer with experience in full-stack web development, machine learning, and data analytics. Passionate about building scalable and efficient applications, I have worked on various projects involving MERN stack development, AI-driven analytics.</p>
+            <p>
+                Passionate about software engineering and full-stack development, I thrive on solving complex problems and building innovative applications. Currently pursuing an Integrated M.Tech at VIT Vellore, I have honed my skills in React.js, Node.js, Express.js, and Python, creating impactful projects like CrowdChoice (a full-stack polling application) and FairShare (an expense tracking and splitting platform). With a strong foundation in DSA and databases, I actively engage in competitive programming and hackathons, continuously challenging myself to grow. I also developed Sort Vision (a sorting algorithm visualizer), Heart Disease Prediction (a machine learning model for heart disease prediction), and Text Summarization Web App (a Flask-based web app for text summarization). I believe in collaborative learning, leadership, and adaptability, making me a dynamic team player ready to take on real-world challenges. Let’s connect and create something amazing together!
+            </p>    
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="icon">&#128472;</i> <!-- Operating Systems Icon -->
+                <h3>Operating Systems</h3>
+                <p>Windows, Linux</p>
+            </div>
+            <div class="skill-card">
+                <i class="icon">&#128295;</i> <!-- Programming Languages Icon -->
+                <h3>Languages</h3>
+                <p>C, C++, Python (Basic), Java</p>
+            </div>
+            <div class="skill-card">
+                <i class="icon">&#128276;</i> <!-- Front-End Icon -->
+                <h3>Front-End</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="icon">&#128290;</i> <!-- Developer Tools Icon -->
+                <h3>Developer Tools</h3>
+                <p>Visual Studio Code, Jupyter Notebook, Google Colab, Power BI, Excel, PowerPoint, MySQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="icon">&#128218;</i> <!-- Frameworks & Libraries Icon -->
+                <h3>Frameworks & Libraries</h3>
+                <p>React, Pandas, NumPy, Scikit-Learn, Matplotlib</p>
+            </div>
+            <div class="skill-card">
+                <i class="icon">&#128274;</i> <!-- Databases Icon -->
+                <h3>Databases</h3>
+                <p>SQL, MongoDB</p>
+            </div>
+            <div class="skill-card">
+                <i class="icon">&#128273;</i> <!-- Version Control Icon -->
+                <h3>Version Control</h3>
+                <p>Git, GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>CrowdChoice</h3>
+            <p><strong>Technologies:</strong> React, Tailwind CSS, Node.js, Express, MongoDB, JWT, Axios, Vite</p>
+            <p>A full-stack polling application with features including user authentication, real-time poll statistics, and support for various poll types.</p>
+            <p><a href="https://crowd-choice-dinesh-chowdary-jampala-s-projects.vercel.app/" class="project-link">
+                <i class="fas fa-external-link-alt"></i> View Project
+            </a></p>
+        </div>
+        <div class="card">
+            <h3>FairShare</h3>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Firebase, Chart.js</p>
+            <p>A web-based expense tracking and splitting platform with real-time expense sharing and graphical data visualization.</p>
+            <p><a href="https://fair-share-gamma.vercel.app/auth.html" class="project-link">
+                <i class="fas fa-external-link-alt"></i> View Project
+            </a> </p>
+        </div>
+        <div class="card">
+            <h3>Sort Vision</h3>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <p>A sorting algorithm visualizer demonstrating various sorting algorithms with complexity analysis.</p>
+            <a href="https://sort-vision-six.vercel.app/index.html" class="project-link"><i class="fas fa-external-link-alt"></i> View Project
+            </a></p>
+        </div>
+        <div class="card">
+            <h3>Heart Disease Prediction</h3>
+            <p><strong>Technologies:</strong> Python, Machine Learning, Deep Learning</p>
+            <p>Developed a machine learning and deep learning-based heart disease prediction model using Gradient Boosting, CNN, Decision Tree, and Naïve Bayes, achieving a maximum accuracy of 98.84% with Gradient Boosting.</p>
+            <p><a href="https://archive.ics.uci.edu/dataset/519/heart+failure+clinical+record" class="project-link">
+                <i class="fas fa-external-link-alt"></i> View Dataset
+            </a></p>
+        </div>
+        <div class="card">
+            <h3>Text Summarization Web App</h3>
+            <p><strong>Technologies:</strong> Flask, spaCy, HTML, CSS</p>
+            <p>Developed a Flask-based web application for text summarization, utilizing NLP techniques with spaCy for real-time text processing and a responsive user interface.</p>
+            <p><a href="https://smart-text-summarizer-1.onrender.com/" class="project-link">
+                <i class="fas fa-external-link-alt"></i> View Project
+            </a></p>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2>Certifications</h2>
+        <div class="card">
+            <ul>
+                <li><strong>Java Full Stack</strong> - Imarticus Learning (July 2024) - <a class="link" href="https://drive.google.com/file/d/16KMMwcRqLmUh7PuUImrXdc84IlYv9Y53/view?usp=sharing" target="_blank">View Certificate</a></li>
+                <li><strong>Data Structures and Algorithms</strong> - Geeks For Geeks (Self-Paced) (February 2025) - <a class="link" href="https://www.geeksforgeeks.org/" class="project-link" target="_blank">View Certificate</a></li>
+                <li><strong>Introduction to Java and Object-Oriented Programming</strong> - Coursera (March 2023) - <a class="link" href="https://www.coursera.org/account/accomplishments/certificate/WAZT7ZU7YY7G/" class="project-link" target="_blank">View Certificate</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jampala Dinesh Chowdary. All rights reserved.</p>
+        <p>Developed by Jampala Dinesh Chowdary | Contact: dineshwalker143@gmail.com</p>
+    </footer>
+</body>
+</html>
